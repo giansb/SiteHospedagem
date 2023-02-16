@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Source Sans Pro;
+}
+
+/*universal*/
+
+.limita-secao{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px
+}
+
+.azul{
+    color: rgb(0, 132, 255);
+}
+
+.fundo-azul{
+    background-color: rgb(0, 134, 196);
+    color: white;
+}
+
+.titulo-estilo{
+    font-size: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin:20px auto
+}
+
+/*primeira secao*/
+
+header{
+    text-align: center;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.logo-info{
+    line-height: 5px;
+    padding-left: 10px;
+    text-align: left;
+    
+}
+
+.logo-info a{
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho-links{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.cabecalho-links a{
+    margin: 10px 15px;
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.cabecalho{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*segunda secao*/
+
+.capa{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 134, 196);
+    display: flex;
+}
+
+.capa-conteudo{
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    justify-content: center;
+}
+
+.capa-conteudo h2{
+    font-size: 30px;
+}
+
+.capa-linhas{
+    max-width: 420px;
+}
+
+.capa-img{
+    width: 500px;
+    height: auto;
+}
+
+/*terceira secao*/
+
+.anuncio {
+    background-color: rgb(0, 38, 63);
+    color: white;
+    height: auto;   
+}
+
+.anuncio-botao{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(0, 134, 196);
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.anuncio-botao a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
+/*quarta secao*/
+
+.info-boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 30px 0;
+}
+
+.info-box{
+    width: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.info-box p{
+    text-align: center;
+}
+
+.info-box img{
+    width: 80px;
+
+}
+
+/*quinta secao tabela*/
+
+.tabela-planos{
+    background-color: rgb(235, 235, 235);
+    padding: 40px 0;
+}
+
+.secao-tabela-planos{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.tabela-pessoal{
+    display:none;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.tabela-pessoal ul li{
+    text-align: left;
+    line-height: 30px;
+}
+
+.tab-icon{
+    width: 100px;
+}
+
+ table,th,td{
+    border: 1px solid rgb(192, 192, 192);
+    border-collapse: collapse;
+}
+
+ table th{
+    width: 250px;
+    
+}
+
+table td{
+    padding: 20px;
+    text-align: center;
+}
+
+.tabela-pag-principal tbody tr td:hover{
+    background-color: rgb(0, 134, 196);
+}
+
+
+ .zebra tbody tr:nth-of-type(odd){
+    background-color: rgb(219, 219, 219);
+    box-shadow: 15px;
+}
+
+ .tabela-pag-principal table{
+    box-shadow: rgba(41, 152, 255, 0.966) 0px 20px 55px, rgba(41, 152, 255, 0.966) 0px -12px 30px, 0 0 0;
+}
+
+.tabela-pag-principal{
+    margin: 40px 0;
+}
+
+
+/*rodape*/
+
+.rodape{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.rodape .logo{
+    margin: 30px;
+}
+
+.rodape p {
+    font-weight: bold;
+    line-height: 5px;
+}
+
+.rodape-creditos{
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    padding: 2px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tabela-planos .titulo-estilo{
+    display: none;
+}
+
+
+@media(max-width:600px){
+    .capa-img{
+        width: 300px; 
+    }
+
+    .cabecalho-links{
+        flex-flow: row wrap;
+        justify-content:space-around;
+        margin-top: 20px;
+    }
+    
+    .cabecalho-links a{
+        margin: 10px;
+        width: 120px;
+        height: 40px;
+    }
+
+    .capa-conteudo{
+        margin: 0;
+    }
+
+    .tabela-planos .limita-secao{
+        
+        padding: 0;
+    }
+
+    .tab-icon{
+        width: 60px;
+    }
+
+    .tabela-pag-principal thead{
+        font-size: 13px;
+    }
+
+    footer .limita-secao{
+        padding: 10px
+    }
+
+}
+
+@media(max-width:800px){
+    .anuncio .limita-secao{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .titulo-estilo{
+        font-size: 20px;
+    }
+
+    .tabela-pag-principal  {
+        width: 100%;
+    }
+    
+    .tabela-pag-principal table{
+        box-shadow: none;
+    }
+
+    .tabela-pag-principal thead th:first-of-type, .tabela-pag-principal tbody td:first-of-type{
+        display: none;
+    }
+
+    .tabela-pessoal{
+        display:flex;
+    }
+
+    .rodape p {
+        line-height: 15px;
+    }
+
+    .tabela-planos .titulo-estilo{
+        display:block;
+    }
+
+}

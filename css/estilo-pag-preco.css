@@ -1,0 +1,72 @@
+.tabela-precos{
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.precos h4, .precos-links a, .rodape-azul{
+    color: white;
+}
+
+.rodape-azul .rodape .logo .logo-info h1, .rodape-azul div:last-child{
+    color: black;
+}
+
+.rodape-azul .rodape .logo .logo-info h4{
+    color: white;
+}
+
+.tabela-precos-table, .tabela-precos-table th, .tabela-precos-table td{
+    border: 2px solid rgb(240, 240, 240);
+}
+
+.tabela-precos-table tbody tr td:first-of-type, .tabela-precos-table thead th{
+    background-color: rgb(226, 226, 226);
+    font-weight: bold;
+}
+
+.tabela-precos-table tbody tr td:hover{
+    background-color: rgb(0, 134, 196);
+}
+
+.tabela-precos-table tbody tr td:first-of-type:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.tabela-precos-table thead th:first-of-type{
+    background-color: white;
+    border: 2px solid white;
+}
+
+.tabela-precos-table thead th p{
+    color: rgb(94, 94, 94);
+}
+
+.tabela-precos-table thead th h2{
+    font-size: 40px;
+    line-height: 1px;
+}
+
+.circulo{
+    margin: 0 auto;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(59, 151, 255);
+    border-radius: 60%;
+}
+
+.img-table{
+    display: none;
+}
+
+@media(max-width: 1300px){
+    .img-table{
+        display: block;
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .tabela-precos{
+        display: none;
+    }
+}
